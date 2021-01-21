@@ -1,21 +1,27 @@
-
-/*3. Write a Java program that reads an integer between 0 and 1000 and adds all the digits in the integer. Go to the editor
-
-Test Data
-Input an integer between 0 and 1000: 565
-Expected Output :
-The sum of all digits in 565 is 16*/
-
 package com.pluralsight.www;
 
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        Scanner inter=new Scanner(System.in);
-        int num,sum,firstDigit,secondDigit,thirdDigit,fourthDigit,remainingNumber;
-        num=inter.nextInt();
-        firstDigit=num%10;
-        System.out.println("Enter the integer"+firstDigit);
-    }
-}
+        double cel,farn,celcius,fahrenheit;
+        //Equation=C/5=(f-32)/9
+	    //C=(5(F-32))/9
+        //F=(9C+(32*5))/5
+        Scanner input=new Scanner(System.in);
+        System.out.println("The temperature in celcius: ");
+       cel= input.nextDouble();
+        farn=((9*cel+(32*5))/5);
+       System.out.println("The temperature in Farnheit: "+farn);
+
+
+
+                celcius=input.nextDouble();
+                fahrenheit=((9*celcius+(32*5))/5);
+                System.out.println("temperature is "+fahrenheit+" Fahrenheit");
+
+            }
+        }
+
+
